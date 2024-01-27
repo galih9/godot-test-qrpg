@@ -1,0 +1,18 @@
+[gd_scene load_steps=2 format=2]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 381, 17 )
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Area2D" type="Area2D" parent="."]
+position = Vector2( 280, 456 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2( 371, 7 )
+shape = SubResource( 1 )
+
+[node name="ColorRect" type="ColorRect" parent="Area2D"]
+margin_top = -8.0
+margin_right = 752.0
+margin_bottom = 24.0
